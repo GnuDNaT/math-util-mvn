@@ -22,7 +22,7 @@ public class MathUtilityDDTTest {
                                 {2, 2}, 
                                 {3, 6},
                                 {4, 24},
-                                {5, 120}};
+                                {5, 1200}};
                                //n  expected 
                                //c0  c1
         
