@@ -17,19 +17,29 @@ public class MathUtility {
     // ko co giai thua am
     // 21 giai thu la vuot kieu long ko chua noi, vuot 18 con so
     //gai rang buoc dau vao cho ham/method
-    public static long getFactorial(int n) {
-        //TODO
-        long product = 1;
+//    public static long getFactorial(int n) {
+//        //TODO
+//        long product = 1;
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid n. n must be between 0..20, plz.");
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//
+//        for (int i = 2; i <= n; i++) {
+//            product *= i;
+//        }
+//        return product;
+//    }
+        public static long getFactorial(int n) {
+
         if (n < 0 || n > 20) {
             throw new IllegalArgumentException("Invalid n. n must be between 0..20, plz.");
         }
         if (n == 0 || n == 1) {
             return 1;
         }
-
-        for (int i = 2; i <= n; i++) {
-            product *= i;
-        }
-        return product;
+        return n*getFactorial(n - 1 );
     }
 }
